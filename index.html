@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Glow Motion Pictures</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="grid.css">
+  
+  <style>
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;	
+  transform: translate(-50%, -50%);
+}
+
+#myVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mission{
+padding-bottom: 20%; 
+display: inline; 
+}
+#hireus-intro{
+	font-size: 1em;
+	padding-bottom: 4vh;
+}
+#hire-title{
+text-align: center;
+}
+/* CSS for phones in portrait orientation */
+@media (max-width: 768px) {
+  /* Hide the email link on phone-sized screens */
+  .email-link {
+    display: none;
+  }
+  
+  /* Show the new text on phone-sized screens */
+  .modal--information::after {
+    content: "Join Our Creative Family at Glow Motion Pictures! As a production company, we invest in our members by providing mentorship, discounted equipment rentals, and exposure to exceptional projects with talented individuals. Embrace a collaborative and supportive environment that fosters growth and creativity. Whether you're an aspiring filmmaker, a seasoned cinematographer, an editing maestro, or a visionary writer, we welcome all creative talents to join our ranks. Become part of our tight-knit team and illuminate the world with the magic of storytelling. Contact us today to receive an application and to learn more about our team.";
+    display: block;
+    margin-bottom: 10px; /* Add some spacing for readability */
+    font-weight: bold; /* Optionally, set the text to be bold */
+  }
+  .contact{
+  background-image:url("assets/img/phone-career.png");
+  }
+}
+#about-us{
+font-size:120%;
+}
+#meet{
+font-size:170%;
+}
+
+  </style>
+  
+  
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="Still Logos/GMP Horizon White txt transparent.png" alt="Global" style="width: 280px;padding-top: 15%;" alt = "Global">
+  </a>
+   <p class="device-notification--message">Glow Motion has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+           <a class="header--logo" href="#0">
+              <img src="Still Logos/GMP Horizon White txt transparent.png" alt="Global" style="width: 280px;padding-top: 15%;">
+            </a>
+          <button class="header--cta cta">Hire Us</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>Works</span></li>
+            <li><span>About Us</span></li>
+            <li><span>Career </span></li>
+            <li><span>Hire Us</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+                 <video id="myVideo" autoplay muted>
+              <source id="videoSource" type="video/mp4" src="films/demo.mp4" alt= "Welcome">
+            </video>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>What We Do</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="works/commercial.html">
+                      <div class="slider--item-image">
+                        <img src="assets/img/commercial.jpg" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Commercials</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="works/mv.html">
+                      <div class="slider--item-image">
+                        <img src="assets/img/mv.jpg" alt="Metiew and Smith">
+                      </div>
+                      <p class="slider--item-title">Music Videos</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="works/photo.html">
+                      <div class="slider--item-image">
+                        <img src="assets/img/photography.jpg" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Photography</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item">
+                    <a href="works/shorts.html">
+                      <div class="slider--item-image">
+                        <img src="assets/img/shorts.jpg" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Shorts</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item">
+                    <a href="works/documentary.html">
+                      <div class="slider--item-image">
+                        <img src="assets/img/documentaries.jpg" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Documentaries</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+              	<div id= "mission">
+           			 <h1>About Us...</h1>
+           			 <h2 id="we">We <br>believe in<br>passionate<br>people</h2>
+            		<p id="about-us"> At Glow Motion Pictures, collaboration lies at the heart of our creative endeavors. We believe that by fostering a supportive and inspiring community, we can unlock the full potential of out artists and create extraordinary cinematic experiences. We bring together passionate individuals from various disciplines, including award-winning directors, writers, cinematographers, editors, producers, and more. By encouraging them to thrive in their respective crafts while pushing the boundaries of creativity, we strive to deliver exceptional results.   </p>
+            	</div>
+            	<div class="about--options">
+            	 <a href="works/team.html" id="meet">Meet our Team
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                </div>
+               
+              </div>
+              
+          </li>
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                	
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="mailto:info@glowmotionpictures.com">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="hire">
+            	<h1 id = "hire-title"> Hire Us </h1>
+              	<h1 id = "hireus-intro"> Unleash the full potential of your ideas now. Contact us today to receive a personalized quote for your project, and let us make your vision a reality!</h1>
+              <!-- checkout formspree.io for easy form setup -->
+              <form class="work-request" method="post" action="send_email.php">
+  				<div class="work-request--information">
+    			    <div class="information-name">
+      					<input id="name" type="text" name="name" spellcheck="false" required>
+      						<label for="name">Name</label>
+    				</div>
+    				<div class="information-email">
+      					<input id="email" type="email" name="email" spellcheck="false" required>
+      					<label for="email">Email</label>
+    				</div>
+  				</div>
+  				<input type="submit" value="Send Request">
+			</form>
+            </div>
+          </li>
+           
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Works</li>
+    <li>About Us</li>
+    <li>Career</li>
+    <li>Hire Us</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+<script>
+
+</script>
+</body>
+</html>
